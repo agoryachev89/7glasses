@@ -97,19 +97,19 @@ function save_modal() {
 function render_summs() {
     var summ_all = 0
     glasses.forEach((element) => {
-        document.getElementById('summ_' + element).innerHTML = localStorage.getItem(element) + ' ₽'
+        document.getElementById('summ_' + element).innerHTML = parseFloat(localStorage.getItem(element)).toFixed(2) + ' ₽'
         summ_all += parseFloat(localStorage.getItem(element))
     })
-    document.getElementById('summ_all').innerHTML = summ_all + ' ₽'
+    document.getElementById('summ_all').innerHTML = summ_all.toFixed(2) + ' ₽'
 
     var sber_main = parseFloat(localStorage.getItem('common'))
-    document.getElementById('sber_main').innerHTML = sber_main + ' ₽'
+    document.getElementById('sber_main').innerHTML = sber_main.toFixed(2) + ' ₽'
 
-    var sber_sber = parseFloat(localStorage.getItem('enjoy')) + parseFloat(localStorage.getItem('learn')) + parseFloat(localStorage.getItem('buy')) + parseFloat(localStorage.getItem('gift')) + parseFloat(localStorage.getItem('save'))
-    document.getElementById('sber_sber').innerHTML = sber_sber + ' ₽'
+    var sber_sber = parseFloat(localStorage.getItem('enjoy')) + parseFloat(localStorage.getItem('enjoy')) + parseFloat(localStorage.getItem('learn')) + parseFloat(localStorage.getItem('gift')) + parseFloat(localStorage.getItem('save'))
+    document.getElementById('sber_sber').innerHTML = sber_sber.toFixed(2) + ' ₽'
 
     var tinkoff = parseFloat(localStorage.getItem('invest'))
-    document.getElementById('tinkoff').innerHTML = tinkoff + ' ₽'
+    document.getElementById('tinkoff').innerHTML = tinkoff.toFixed(2) + ' ₽'
 }
 
 render_summs()
