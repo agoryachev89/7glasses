@@ -105,7 +105,7 @@ function render_summs() {
     var sber_main = parseFloat(localStorage.getItem('common'))
     document.getElementById('sber_main').innerHTML = sber_main + ' ₽'
 
-    var sber_sber = parseFloat(localStorage.getItem('enjoy')) + parseFloat(localStorage.getItem('enjoy')) + parseFloat(localStorage.getItem('learn')) + parseFloat(localStorage.getItem('gift')) + parseFloat(localStorage.getItem('save'))
+    var sber_sber = parseFloat(localStorage.getItem('enjoy')) + parseFloat(localStorage.getItem('learn')) + parseFloat(localStorage.getItem('buy')) + parseFloat(localStorage.getItem('gift')) + parseFloat(localStorage.getItem('save'))
     document.getElementById('sber_sber').innerHTML = sber_sber + ' ₽'
 
     var tinkoff = parseFloat(localStorage.getItem('invest'))
