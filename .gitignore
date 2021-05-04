@@ -1,1 +1,3 @@
 *.pyc
+.nuxt/
+node_modules/
