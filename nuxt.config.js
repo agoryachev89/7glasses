@@ -18,7 +18,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
     ]
   },
 
@@ -64,10 +64,8 @@ export default {
           sizes: '512x512'
         }
       ],
-      // start_url: 'index.html',
       background_color: '#FFA500',
       display: 'standalone',
-      // scope: '/',
       theme_color: '#FFA500'
     }
   },
