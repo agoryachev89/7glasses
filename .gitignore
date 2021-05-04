@@ -1,3 +1,4 @@
 *.pyc
 .nuxt/
 node_modules/
+static/
