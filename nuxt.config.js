@@ -73,7 +73,7 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  // build: {
-  //   publicPath: 'https://agoryachev89.github.io/7glasses/dist/'
-  // }
+  build: {
+    publicPath: 'https://agoryachev89.github.io/7glasses/dist/'
+  }
 }
