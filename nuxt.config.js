@@ -44,7 +44,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'ru',
       short_name: '7 стаканов',
       name: '7 стаканов',
       icons: [
@@ -60,10 +60,10 @@ export default {
           sizes: '512x512'
         }
       ],
-      start_url: 'index.html',
+      start_url: 'https://agoryachev89.github.io/7glasses/dist/index.html',
       background_color: '#FFA500',
       display: 'standalone',
-      scope: '/7glasses/dist/',
+      scope: 'https://agoryachev89.github.io/7glasses/dist/',
       theme_color: '#FFA500'
     }
   },
