@@ -1,9 +1,9 @@
 <template>
   <b-container>
-    <b-row>
-      <b-col><b>Итого</b></b-col>
-      <b-col>{{ total.toFixed(2) }} ₽</b-col>
-      <b-col><b-button @click="create_modal()" variant="outline-success">+</b-button></b-col>
+    <b-row class="text-center">
+      <b-col cols="3"><b>Итого</b></b-col>
+      <b-col cols="6">{{ total.toFixed(2) }} ₽</b-col>
+      <b-col cols="3"><b-button @click="create_modal()" variant="outline-success">+</b-button></b-col>
     </b-row>
   </b-container>
 </template>

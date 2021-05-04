@@ -6,7 +6,7 @@
       <b-col v-if="operation === 'set'" >Редактируем стакан {{ current_glass_name }}</b-col>
       <b-col v-if="operation === 'income'" >Поступление средств</b-col>
     </b-row>
-    <b-row>
+    <b-row class="text-center">
       <b-col>
         <b-form  @submit.stop.prevent>
           <b-form-input ref="summ_data" type="number" v-model="entered_value" :state="validation" id="modal_data"></b-form-input>
@@ -16,9 +16,9 @@
         </b-form>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col><b-button @click="save()" variant="outline-success">Сохранить</b-button></b-col>
+    <b-row class="text-center">
       <b-col><b-button @click="toggle_modal()" variant="outline-primary">Отмена</b-button></b-col>
+      <b-col><b-button @click="save()" variant="outline-success">Сохранить</b-button></b-col>
     </b-row>
     <b-row v-if="operation === 'income'"><b-col>На инвестиции: {{ to_invest.toFixed(2) }} ₽</b-col></b-row>
     <b-row v-if="operation === 'income'"><b-col>На сбер сбер: {{ to_sber_sber.toFixed(2) }} ₽</b-col></b-row>

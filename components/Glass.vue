@@ -1,11 +1,13 @@
 <template>
   <b-container>
     <b-row>
-      <b-col cols="5">{{ glass.name }}</b-col>
-      <b-col cols="2">{{ glass.value.toFixed(2) }} ₽</b-col>
-      <b-col><b-button @click="create_modal('plus')" variant="outline-success">+</b-button></b-col>
-      <b-col><b-button @click="create_modal('minus')" variant="outline-danger">-</b-button></b-col>
-      <b-col><b-button @click="create_modal('set')" variant="outline-primary">✎</b-button></b-col>
+      <b-col class="text">{{ glass.name }}</b-col>
+      <b-col class="text">{{ glass.value.toFixed(2) }} ₽</b-col>
+      <b-col>
+        <b-button size="sm" @click="create_modal('plus')" variant="outline-success">+</b-button>
+        <b-button size="sm" @click="create_modal('minus')" variant="outline-danger">-</b-button>
+        <b-button size="sm" @click="create_modal('set')" variant="outline-primary">✎</b-button>
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -40,11 +42,15 @@ export default {
 
 <style>
 b-button {
-  font-size: 18px;
-  margin-left: 7px;
+  font-size: 14px;
+  margin-left: 3px;
 }
 
 .row {
   padding: 3px;
+}
+
+.text {
+  font-size: 0.8rem;
 }
 </style>
