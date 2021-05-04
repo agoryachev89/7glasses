@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col class="text slim">{{ glass.name }}</b-col>
-      <b-col class="text slim">{{ glass.value.toFixed(2) }} ₽</b-col>
+      <b-col class="text-right text slim">{{ glass.value.toFixed(2) }} ₽</b-col>
       <b-col class="slim">
         <b-button class="bwidth" size="sm" @click="create_modal('plus')" variant="outline-success">+</b-button>
         <b-button class="bwidth" size="sm" @click="create_modal('minus')" variant="outline-danger">-</b-button>
@@ -60,5 +60,6 @@ b-button {
 
 .text {
   font-size: 0.9rem;
+  padding-right: 15px;
 }
 </style>

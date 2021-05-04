@@ -1,9 +1,9 @@
 <template>
   <b-container>
     <b-row><b-col><b>Счета</b></b-col></b-row>
-    <b-row><b-col>Сбер сбер</b-col><b-col>{{ sb_sb.toFixed(2) }} ₽</b-col></b-row>
-    <b-row><b-col>Сбер осн</b-col><b-col>{{ sb_main.toFixed(2) }} ₽</b-col></b-row>
-    <b-row><b-col>Тиньков</b-col><b-col>{{ tinkoff.toFixed(2) }} ₽</b-col></b-row>
+    <b-row><b-col>Сбер основной</b-col><b-col class="text-right">{{ sb_main.toFixed(2) }} ₽</b-col></b-row>
+    <b-row><b-col>Сбер сберсчет</b-col><b-col class="text-right">{{ sb_sb.toFixed(2) }} ₽</b-col></b-row>
+    <b-row><b-col>Тиньков</b-col><b-col class="text-right">{{ tinkoff.toFixed(2) }} ₽</b-col></b-row>
   </b-container>
 </template>
 
