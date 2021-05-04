@@ -2,7 +2,7 @@
   <div class="container">
     <div class="mx-auto title-panel">
       <h1 class="title">
-        7 стаканов v2.0.1
+        7 стаканов v2.0.2
       </h1>
     </div>
     <Modal v-if="show_modal" />
@@ -43,7 +43,7 @@ export default {
 <style>
 .title-panel {
   font-weight: bold;
-  font-size: 18pt;
+  font-size: 14pt;
 }
 
 .title {
