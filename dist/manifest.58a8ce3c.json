@@ -57,10 +57,9 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "/7glasses/dist/?standalone=true",
   "display": "standalone",
   "background_color": "#FFA500",
   "theme_color": "#FFA500",
-  "lang": "ru",
-  "scope": "/"
+  "lang": "ru"
 }

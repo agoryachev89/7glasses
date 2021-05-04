@@ -64,10 +64,10 @@ export default {
           sizes: '512x512'
         }
       ],
-      start_url: 'index.html',
+      // start_url: 'index.html',
       background_color: '#FFA500',
       display: 'standalone',
-      scope: '/',
+      // scope: '/',
       theme_color: '#FFA500'
     }
   },
