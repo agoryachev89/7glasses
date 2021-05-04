@@ -67,7 +67,7 @@ export default {
       start_url: 'index.html',
       background_color: '#FFA500',
       display: 'standalone',
-      scope: '/7glasses/dist/',
+      scope: '/',
       theme_color: '#FFA500'
     }
   },
