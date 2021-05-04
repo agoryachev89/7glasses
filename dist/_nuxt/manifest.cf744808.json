@@ -62,5 +62,5 @@
   "background_color": "#FFA500",
   "theme_color": "#FFA500",
   "lang": "en",
-  "scope": "/7glasses/"
+  "scope": "/7glasses/dist/"
 }
