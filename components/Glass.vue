@@ -1,9 +1,9 @@
 <template>
   <b-container>
     <b-row>
-      <b-col class="text">{{ glass.name }}</b-col>
-      <b-col class="text">{{ glass.value.toFixed(2) }} ₽</b-col>
-      <b-col>
+      <b-col class="text slim">{{ glass.name }}</b-col>
+      <b-col class="text slim">{{ glass.value.toFixed(2) }} ₽</b-col>
+      <b-col class="slim">
         <b-button size="sm" @click="create_modal('plus')" variant="outline-success">+</b-button>
         <b-button size="sm" @click="create_modal('minus')" variant="outline-danger">-</b-button>
         <b-button size="sm" @click="create_modal('set')" variant="outline-primary">✎</b-button>
@@ -48,6 +48,10 @@ b-button {
 
 .row {
   padding: 3px;
+}
+
+.slim {
+  padding: 0;
 }
 
 .text {
