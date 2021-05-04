@@ -60,7 +60,7 @@ export default {
           sizes: '512x512'
         }
       ],
-      start_url: 'https://agoryachev89.github.io/7glasses/dist/index.html',
+      start_url: 'index.html',
       background_color: '#FFA500',
       display: 'standalone',
       scope: 'https://agoryachev89.github.io/7glasses/dist/',
