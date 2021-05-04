@@ -5,6 +5,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  router: {
+    base: '/7glasses/dist/'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '7 стаканов',
@@ -63,13 +67,13 @@ export default {
       start_url: 'index.html',
       background_color: '#FFA500',
       display: 'standalone',
-      scope: 'https://agoryachev89.github.io/7glasses/dist/',
+      scope: '/7glasses/dist/',
       theme_color: '#FFA500'
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    publicPath: 'https://agoryachev89.github.io/7glasses/dist/'
-  }
+  // build: {
+  //   publicPath: 'https://agoryachev89.github.io/7glasses/dist/'
+  // }
 }

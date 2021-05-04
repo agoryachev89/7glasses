@@ -47,6 +47,6 @@ export default {
 }
 
 .title {
-  width: 300px;
+  width: 350px;
 }
 </style>

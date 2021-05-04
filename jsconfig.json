@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./7glasses/dist/",
+    "baseUrl": "/",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"],
