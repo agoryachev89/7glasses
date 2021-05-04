@@ -2,3 +2,5 @@
 .nuxt/
 node_modules/
 static/
+.DS_Store
+build.sh
