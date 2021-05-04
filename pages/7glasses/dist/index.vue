@@ -21,6 +21,17 @@ export default {
       return this.$store.state.modal.show_modal
     },
   },
+  mounted() {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('https://agoryachev89.github.io/7glasses/dist/service-worker.js')
+      .then(function(registration) {
+          console.log('Registration successful, scope is:', registration.scope)
+      })
+      .catch(function(error) {
+          console.log('Service worker registration failed, error:', error)
+      })
+    }
+  },
   data() {
     return {
       glasses_names: this.$store.state.glasses_names
