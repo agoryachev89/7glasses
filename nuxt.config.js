@@ -49,7 +49,7 @@ export default {
       name: '7 стаканов',
       icons: [
         {
-          src: 'assets/ogo2.png',
+          src: 'assets/logo2.png',
           type: 'image/png',
           sizes: '192x192',
           purpose: 'any maskable'
@@ -70,5 +70,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    publicPath: 'https://agoryachev89.github.io/7glasses/dist/'
   }
 }
